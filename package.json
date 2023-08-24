@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "format": "npx prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format-pretty-quick": "pretty-quick --staged"
   },
   "private": true,
   "dependencies": {
