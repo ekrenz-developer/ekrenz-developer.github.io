@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-skeleton',
   templateUrl: './skeleton.component.html',
-  styleUrls: ['./skeleton.component.css']
+  styleUrls: ['./skeleton.component.css'],
 })
-export class SkeletonComponent {
-
-}
+export class SkeletonComponent {}

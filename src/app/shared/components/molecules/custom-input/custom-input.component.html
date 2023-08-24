@@ -18,20 +18,23 @@
 </div> -->
 
 <div class="form-floating">
-	<input
-		[id]="fieldName"
-		[name]="fieldName"
-		type="text"
-		class="form-control"
-		[value]="value"
-		(input)="onInput($event)"
-		[placeholder]="label"
-		[disabled]="isDisabled"
-		[ngClass]="{ 'is-invalid': formField.invalid && formField.touched }"
-	/>
-	<label [for]="fieldName" class="text-uppercase">{{ label }}. *</label>
-	<ng-container *ngIf="formField.invalid && formField.touched">
-		<div *ngIf="formField.errors?.['required']" class="invalid-feedback">formField. is required.</div>
-		<div *ngIf="formField.errors?.['email']" class="invalid-feedback">email is invalid</div>
-	</ng-container>
+  <input
+    [id]="fieldName"
+    [name]="fieldName"
+    type="text"
+    class="form-control"
+    [value]="value"
+    (input)="onInput($event)"
+    [placeholder]="label"
+    [disabled]="isDisabled"
+    [ngClass]="{ 'is-invalid': formField.invalid && formField.touched }" />
+  <label [for]="fieldName" class="text-uppercase">{{ label }}. *</label>
+  <ng-container *ngIf="formField.invalid && formField.touched">
+    <div *ngIf="formField.errors?.['required']" class="invalid-feedback">
+      formField. is required.
+    </div>
+    <div *ngIf="formField.errors?.['email']" class="invalid-feedback">
+      email is invalid
+    </div>
+  </ng-container>
 </div>
