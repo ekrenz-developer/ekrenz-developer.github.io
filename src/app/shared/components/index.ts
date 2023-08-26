@@ -1,10 +1,12 @@
 // atoms
+import { MenuItemComponent } from './atoms';
 
 // molecules
 import {
   AlertComponent,
   CustomInputComponent,
   CustomSelectComponent,
+  MenuComponent,
 } from './molecules';
 
 // organisms
@@ -15,4 +17,6 @@ export const components = [
   AlertComponent,
   CustomInputComponent,
   CustomSelectComponent,
+  MenuComponent,
+  MenuItemComponent,
 ];
