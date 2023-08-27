@@ -1,12 +1,13 @@
 // atoms
-import { MenuItemComponent } from './atoms';
+import { NavbarItemComponent, SocialMediaMenuItemComponent } from './atoms';
 
 // molecules
 import {
   AlertComponent,
   CustomInputComponent,
   CustomSelectComponent,
-  MenuComponent,
+  NavbarComponent,
+  SocialMediaMenuComponent,
 } from './molecules';
 
 // organisms
@@ -17,6 +18,8 @@ export const components = [
   AlertComponent,
   CustomInputComponent,
   CustomSelectComponent,
-  MenuComponent,
-  MenuItemComponent,
+  NavbarComponent,
+  NavbarItemComponent,
+  SocialMediaMenuItemComponent,
+  SocialMediaMenuComponent,
 ];

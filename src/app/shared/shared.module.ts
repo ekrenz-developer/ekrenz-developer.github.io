@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import * as components from './components';
 
@@ -13,6 +14,7 @@ import * as components from './components';
     HttpClientModule,
     RouterModule,
     CommonModule,
+    FontAwesomeModule,
   ],
   declarations: [...components.components],
   exports: [

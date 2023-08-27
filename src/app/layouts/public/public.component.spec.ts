@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SkeletonComponent } from './skeleton.component';
+import { PublicComponent } from './public.component';
 
-describe('SkeletonComponent', () => {
-  let component: SkeletonComponent;
-  let fixture: ComponentFixture<SkeletonComponent>;
+describe('PublicComponent', () => {
+  let component: PublicComponent;
+  let fixture: ComponentFixture<PublicComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SkeletonComponent],
+      declarations: [PublicComponent]
     });
-    fixture = TestBed.createComponent(SkeletonComponent);
+    fixture = TestBed.createComponent(PublicComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

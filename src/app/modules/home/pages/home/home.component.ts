@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
-import { MenuItemInputInterface } from '@shared/interfaces';
+import {
+  NavbarItemInputInterface,
+  SocialMediaMenuItemInputInterface,
+} from '@shared/interfaces';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
-  listItem: MenuItemInputInterface[] = [];
+  navbarListItem: NavbarItemInputInterface[] = [];
+  socialMediaListItem: SocialMediaMenuItemInputInterface[] = [];
 
   ngOnInit() {
-    this.listItem = [{ title: 'Home' }, { title: 'Contact' }];
+    this.navbarListItem = [{ title: 'Home' }, { title: 'Contact' }];
+    this.socialMediaListItem = [
+      { icon: ['fab', 'github'] },
+      { icon: ['fab', 'linkedin'] },
+    ];
   }
 }

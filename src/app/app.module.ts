@@ -2,29 +2,30 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import {
+  FontAwesomeModule,
+  FaIconLibrary,
+} from '@fortawesome/angular-fontawesome';
+import {
+  faGithub as fabGithub,
+  faLinkedin as fabLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 
 import { CoreModule } from '@core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from '@shared/shared.module';
-
 import { AppComponent } from './app.component';
-import { SkeletonComponent } from './layout/skeleton/skeleton.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { HeaderComponent } from './layout/header/header.component';
+import { PublicComponent } from './layouts/public/public.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SkeletonComponent,
-    FooterComponent,
-    HeaderComponent,
-  ],
+  declarations: [AppComponent, PublicComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     CoreModule,
     SharedModule,
+    FontAwesomeModule,
   ],
   providers: [
     {
@@ -34,4 +35,8 @@ import { HeaderComponent } from './layout/header/header.component';
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(fabGithub, fabLinkedin);
+  }
+}
