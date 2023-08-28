@@ -11,6 +11,7 @@ import {
 } from './molecules';
 
 // organisms
+import { HeaderComponent } from './organisms';
 
 // templates
 
@@ -22,4 +23,5 @@ export const components = [
   NavbarItemComponent,
   SocialMediaMenuItemComponent,
   SocialMediaMenuComponent,
+  HeaderComponent,
 ];
