@@ -3,7 +3,7 @@ module.exports = {
   content: ['./src/**/*.{html,ts}'],
   theme: {
     colors: {
-      'gray': '#666',
+      gray: '#666',
     },
     extend: {
       fontFamily: {
