@@ -1,5 +1,10 @@
 // atoms
-import { NavbarItemComponent, SocialMediaMenuItemComponent } from './atoms';
+import {
+  NavbarItemComponent,
+  SocialMediaMenuItemComponent,
+  HeroTextComponent,
+  HeroImageComponent,
+} from './atoms';
 
 // molecules
 import {
@@ -24,4 +29,6 @@ export const components = [
   SocialMediaMenuItemComponent,
   SocialMediaMenuComponent,
   HeaderComponent,
+  HeroTextComponent,
+  HeroImageComponent,
 ];
