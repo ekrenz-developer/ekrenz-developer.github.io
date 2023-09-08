@@ -12,7 +12,8 @@ module.exports = {
         dmSans: ['DM Sans'],
       },
       backgroundImage: {
-        'gradient-heading': 'linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%)'
+        'gradient-heading':
+          'linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%)',
       },
     },
   },
