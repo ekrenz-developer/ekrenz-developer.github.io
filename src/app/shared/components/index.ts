@@ -13,6 +13,7 @@ import {
   CustomSelectComponent,
   NavbarComponent,
   SocialMediaMenuComponent,
+  HeroComponent,
 } from './molecules';
 
 // organisms
@@ -31,4 +32,5 @@ export const components = [
   HeaderComponent,
   HeroTextComponent,
   HeroImageComponent,
+  HeroComponent,
 ];
