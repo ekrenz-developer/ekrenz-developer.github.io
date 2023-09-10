@@ -4,27 +4,26 @@ import {
   SocialMediaMenuItemComponent,
   HeroTextComponent,
   HeroImageComponent,
+  TitleComponent,
+  SubtitleComponent,
+  TechItemComponent,
 } from './atoms';
 
 // molecules
 import {
-  AlertComponent,
-  CustomInputComponent,
-  CustomSelectComponent,
   NavbarComponent,
   SocialMediaMenuComponent,
   HeroComponent,
+  TechListComponent,
+  SectionHeaderComponent,
 } from './molecules';
 
 // organisms
-import { HeaderComponent } from './organisms';
+import { HeaderComponent, TechSectionComponent } from './organisms';
 
 // templates
 
 export const components = [
-  AlertComponent,
-  CustomInputComponent,
-  CustomSelectComponent,
   NavbarComponent,
   NavbarItemComponent,
   SocialMediaMenuItemComponent,
@@ -33,4 +32,10 @@ export const components = [
   HeroTextComponent,
   HeroImageComponent,
   HeroComponent,
+  TitleComponent,
+  SubtitleComponent,
+  TechItemComponent,
+  TechListComponent,
+  SectionHeaderComponent,
+  TechSectionComponent,
 ];
