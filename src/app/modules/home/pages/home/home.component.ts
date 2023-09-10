@@ -13,11 +13,18 @@ export class HomeComponent implements OnInit {
     this.techSectionProps = {
       header: { title: 'titulo', subtitle: 'asda' },
       techList: [
-        { image: 'test' },
-        { image: 'test' },
-        { image: 'test' },
-        { image: 'test' },
-        { image: 'test' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
+        { image: '/assets/images/ts-logo-128.png' },
       ],
     };
   }
