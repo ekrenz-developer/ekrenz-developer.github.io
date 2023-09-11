@@ -5,3 +5,4 @@ export * from './hero-image/hero-image.component';
 export * from './title/title.component';
 export * from './subtitle/subtitle.component';
 export * from './tech-item/tech-item.component';
+export * from './project-card/project-card.component';

@@ -1,3 +1,6 @@
-<div class="flex flex-row space-x-24 justify-center w-full flex-wrap">
-  <app-tech-item *ngFor="let item of listItem" [props]="item"></app-tech-item>
+<div class="grid grid-cols-6 gap-x-[80px] gap-y-[80px]">
+  <app-tech-item
+    class="w-[120px]"
+    *ngFor="let item of listItem"
+    [props]="item"></app-tech-item>
 </div>

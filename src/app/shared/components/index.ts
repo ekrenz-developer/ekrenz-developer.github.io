@@ -7,6 +7,7 @@ import {
   TitleComponent,
   SubtitleComponent,
   TechItemComponent,
+  ProjectCardComponent,
 } from './atoms';
 
 // molecules
@@ -16,10 +17,15 @@ import {
   HeroComponent,
   TechListComponent,
   SectionHeaderComponent,
+  ProjectListComponent,
 } from './molecules';
 
 // organisms
-import { HeaderComponent, TechSectionComponent } from './organisms';
+import {
+  HeaderComponent,
+  TechSectionComponent,
+  ProjectSectionComponent,
+} from './organisms';
 
 // templates
 
@@ -38,4 +44,7 @@ export const components = [
   TechListComponent,
   SectionHeaderComponent,
   TechSectionComponent,
+  ProjectCardComponent,
+  ProjectListComponent,
+  ProjectSectionComponent,
 ];
