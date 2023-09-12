@@ -8,6 +8,7 @@ import {
   SubtitleComponent,
   TechItemComponent,
   ProjectCardComponent,
+  LogoComponent,
 } from './atoms';
 
 // molecules
@@ -25,6 +26,7 @@ import {
   HeaderComponent,
   TechSectionComponent,
   ProjectSectionComponent,
+  FooterComponent,
 } from './organisms';
 
 // templates
@@ -47,4 +49,6 @@ export const components = [
   ProjectCardComponent,
   ProjectListComponent,
   ProjectSectionComponent,
+  FooterComponent,
+  LogoComponent,
 ];

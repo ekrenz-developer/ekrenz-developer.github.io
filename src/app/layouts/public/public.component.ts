@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { HeaderInputInterface } from '@shared/interfaces';
+import { HeaderInputInterface, FooterInputInterface } from '@shared/interfaces';
 
 @Component({
   selector: 'app-public',
@@ -8,6 +8,7 @@ import { HeaderInputInterface } from '@shared/interfaces';
 })
 export class PublicComponent implements OnInit {
   headerProps!: HeaderInputInterface;
+  footerProps!: FooterInputInterface;
 
   ngOnInit() {
     this.headerProps = {
@@ -23,5 +24,6 @@ export class PublicComponent implements OnInit {
         { icon: ['fab', 'linkedin'] },
       ],
     };
+    this.footerProps = this.headerProps;
   }
 }
