@@ -10,7 +10,7 @@
     "prepare": "husky install",
     "lint": "ng lint",
     "format": "npx prettier --write .",
-    "deploy": "npx angular-cli-ghpages --dir=dist/ekrenz-developer.github.io"
+    "deploy": "ng deploy angular-cli-ghpages --base-href=/"
   },
   "private": true,
   "dependencies": {
