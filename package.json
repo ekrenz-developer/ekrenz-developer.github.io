@@ -9,8 +9,7 @@
     "test": "ng test",
     "prepare": "husky install",
     "lint": "ng lint",
-    "format": "npx prettier --write .",
-    "deploy": "npx angular-cli-ghpages --dir=dist/ekrenz-developer.github.io"
+    "format": "npx prettier --write ."
   },
   "private": true,
   "dependencies": {
@@ -42,7 +41,6 @@
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
-    "angular-cli-ghpages": "^1.0.7",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
