@@ -66,6 +66,6 @@ jobs:
         if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.TOKEN_GITHUB_ACTION }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist/ekrenz-developer.github.io
           enable_jekyll: true
