@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuItemComponent } from './menu-item.component';
+import { SocialMediaMenuItemComponent } from './social-media-menu-item.component';
 
-describe('MenuItemComponent', () => {
-  let component: MenuItemComponent;
-  let fixture: ComponentFixture<MenuItemComponent>;
+describe('SocialMediaMenuItemComponent', () => {
+  let component: SocialMediaMenuItemComponent;
+  let fixture: ComponentFixture<SocialMediaMenuItemComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MenuItemComponent],
+      declarations: [SocialMediaMenuItemComponent],
     });
-    fixture = TestBed.createComponent(MenuItemComponent);
+    fixture = TestBed.createComponent(SocialMediaMenuItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
