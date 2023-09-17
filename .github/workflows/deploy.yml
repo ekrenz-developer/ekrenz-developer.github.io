@@ -84,7 +84,7 @@ jobs:
       # - name: Test
       #   run: npm run test -- --watch=false --browsers=ChromeHeadless
       - name: Build
-        run: npm run build -- -c production --base-href "https://ekrenz-developer.github.io/ekrenz-developer.github.io/"
+        run: npm run build
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
