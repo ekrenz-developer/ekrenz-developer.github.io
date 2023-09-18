@@ -1,3 +1,6 @@
 <button type="button" (click)="goToUrl()">
-  <fa-icon [icon]="item.icon" size="xl" [styles]="{ color: '#666' }"></fa-icon>
+  <fa-icon
+    [icon]="item.icon"
+    size="xl"
+    [class]="variant[item.variant]"></fa-icon>
 </button>

@@ -1,7 +1,7 @@
-import { NavbaItemInputTypeType } from '@shared/types';
+import { NavbarVariantType } from '@shared/types';
 
 export interface NavbarItemInputInterface {
   title: string;
   path: string;
-  type: NavbaItemInputTypeType;
+  variant: NavbarVariantType;
 }

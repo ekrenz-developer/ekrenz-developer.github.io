@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 import { SocialMediaMenuItemInputInterface } from '@shared/interfaces';
+import { NavbarVariantType } from '@shared/types';
 
 @Component({
   selector: 'app-social-media-menu-item',
@@ -8,6 +9,11 @@ import { SocialMediaMenuItemInputInterface } from '@shared/interfaces';
 })
 export class SocialMediaMenuItemComponent {
   @Input() item!: SocialMediaMenuItemInputInterface;
+
+  variant: Record<NavbarVariantType, string> = {
+    header: 'text-secondary',
+    footer: 'text-primary',
+  };
 
   goToUrl(): void {
     window.open(this.item.url, '_blank');
