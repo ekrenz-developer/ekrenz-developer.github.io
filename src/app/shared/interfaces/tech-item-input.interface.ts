@@ -1,3 +1,3 @@
 export interface TechItemInputInterface {
-  image: string;
+  url: string;
 }
