@@ -28,7 +28,7 @@
       "@modules/*": ["src/app/modules/*"],
       "@data/*": ["src/app/data/*"],
       "@layout/*": ["src/app/layout/*"],
-      "@/*": ["./*"],
+      "@/*": ["./*"]
     }
   },
   "angularCompilerOptions": {
