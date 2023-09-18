@@ -1,2 +1,2 @@
 export * from './icon.type';
-export * from './navbar-item-input-type.type';
+export * from './navbar-variant.type';

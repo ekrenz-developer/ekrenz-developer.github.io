@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 import { NavbarItemInputInterface } from '@shared/interfaces';
-import { NavbaItemInputTypeType } from '@shared/types';
+import { NavbarVariantType } from '@shared/types';
 
 @Component({
   selector: 'app-navbar-item',
@@ -10,7 +10,7 @@ import { NavbaItemInputTypeType } from '@shared/types';
 export class NavbarItemComponent {
   @Input() item!: NavbarItemInputInterface;
 
-  type: Record<NavbaItemInputTypeType, string> = {
+  variant: Record<NavbarVariantType, string> = {
     header: 'text-secondary text-[20px]',
     footer: 'text-primary text-[18px]',
   };

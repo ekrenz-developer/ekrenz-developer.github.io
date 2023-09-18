@@ -17,34 +17,39 @@ export class PublicComponent implements OnInit {
         {
           title: 'Home',
           path: INTERNAL_ROUTES.HOME,
-          type: 'header',
+          variant: 'header',
         },
         {
           title: 'About',
           path: INTERNAL_ROUTES.ABOUT,
-          type: 'header',
+          variant: 'header',
         },
         {
           title: 'Tech Stack',
           path: INTERNAL_ROUTES.TECH_STACK,
-          type: 'header',
+          variant: 'header',
         },
         {
           title: 'Projects',
           path: INTERNAL_ROUTES.PROJECTS,
-          type: 'header',
+          variant: 'header',
         },
         {
           title: 'Contact',
           path: INTERNAL_ROUTES.CONTACT,
-          type: 'header',
+          variant: 'header',
         },
       ],
       socialMediaListItem: [
-        { icon: ['fab', 'github'], url: 'https://github.com/ekrenz-developer' },
+        {
+          icon: ['fab', 'github'],
+          url: 'https://github.com/ekrenz-developer',
+          variant: 'header',
+        },
         {
           icon: ['fab', 'linkedin'],
           url: 'https://www.linkedin.com/in/erik-krenz/',
+          variant: 'header',
         },
       ],
     };
@@ -53,34 +58,39 @@ export class PublicComponent implements OnInit {
         {
           title: 'Home',
           path: INTERNAL_ROUTES.HOME,
-          type: 'footer',
+          variant: 'footer',
         },
         {
           title: 'About',
           path: INTERNAL_ROUTES.ABOUT,
-          type: 'footer',
+          variant: 'footer',
         },
         {
           title: 'Tech Stack',
           path: INTERNAL_ROUTES.TECH_STACK,
-          type: 'footer',
+          variant: 'footer',
         },
         {
           title: 'Projects',
           path: INTERNAL_ROUTES.PROJECTS,
-          type: 'footer',
+          variant: 'footer',
         },
         {
           title: 'Contact',
           path: INTERNAL_ROUTES.CONTACT,
-          type: 'footer',
+          variant: 'footer',
         },
       ],
       socialMediaListItem: [
-        { icon: ['fab', 'github'], url: 'https://github.com/ekrenz-developer' },
+        {
+          icon: ['fab', 'github'],
+          url: 'https://github.com/ekrenz-developer',
+          variant: 'footer',
+        },
         {
           icon: ['fab', 'linkedin'],
           url: 'https://www.linkedin.com/in/erik-krenz/',
+          variant: 'footer',
         },
       ],
     };
