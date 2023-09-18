@@ -8,4 +8,8 @@ import { SocialMediaMenuItemInputInterface } from '@shared/interfaces';
 })
 export class SocialMediaMenuItemComponent {
   @Input() item!: SocialMediaMenuItemInputInterface;
+
+  goToUrl(): void {
+    window.open(this.item.url, '_blank');
+  }
 }

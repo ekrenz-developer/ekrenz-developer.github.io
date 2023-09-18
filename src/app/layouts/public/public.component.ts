@@ -41,8 +41,11 @@ export class PublicComponent implements OnInit {
         },
       ],
       socialMediaListItem: [
-        { icon: ['fab', 'github'] },
-        { icon: ['fab', 'linkedin'] },
+        { icon: ['fab', 'github'], url: 'https://github.com/ekrenz-developer' },
+        {
+          icon: ['fab', 'linkedin'],
+          url: 'https://www.linkedin.com/in/erik-krenz/',
+        },
       ],
     };
     this.footerProps = {
@@ -74,8 +77,11 @@ export class PublicComponent implements OnInit {
         },
       ],
       socialMediaListItem: [
-        { icon: ['fab', 'github'] },
-        { icon: ['fab', 'linkedin'] },
+        { icon: ['fab', 'github'], url: 'https://github.com/ekrenz-developer' },
+        {
+          icon: ['fab', 'linkedin'],
+          url: 'https://www.linkedin.com/in/erik-krenz/',
+        },
       ],
     };
   }
