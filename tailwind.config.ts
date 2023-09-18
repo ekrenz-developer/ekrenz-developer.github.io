@@ -1,15 +1,16 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss';
+
+export default {
   content: ['./src/**/*.{html,ts}'],
   theme: {
     colors: {
-      gray: '#666',
-      heading: '#42446E',
+      primary: '#42446E',
+      secondary: '#666',
     },
     extend: {
       fontFamily: {
         poppins: ['Poppins'],
-        dmSans: ['DM Sans'],
+        'dm-sans': ['DM Sans'],
       },
       backgroundImage: {
         'gradient-heading':
@@ -18,4 +19,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+} satisfies Config;
