@@ -1,20 +1,20 @@
-<footer class="flex flex-col w-full">
-  <div class="flex flex-row w-full items-center justify-between py-[42px]">
+<footer class="flex w-full flex-col">
+  <div class="flex w-full flex-row items-center justify-between py-[42px]">
     <app-logo></app-logo>
     <div class="flex flex-row items-center">
       <span
-        class="font-dmSans text-[18px] font-[400] not-italic text-heading mr-[48px]">
+        class="mr-[48px] font-dm-sans text-[18px] font-[400] not-italic text-primary">
         erik.krenz@hotmail.com
       </span>
       <app-social-media-menu
         [listItem]="props.socialMediaListItem"></app-social-media-menu>
     </div>
   </div>
-  <hr class="h-[2px] bg-gray opacity-[0.3] rounded" />
-  <div class="flex flex-row w-full items-center justify-between py-[50px]">
+  <hr class="bg-gray h-[2px] rounded opacity-[0.3]" />
+  <div class="flex w-full flex-row items-center justify-between py-[50px]">
     <app-navbar class="pr-8" [listItem]="props.navbarListItem"></app-navbar>
-    <span class="font-poppins text-[18px] font-[400] not-italic text-gray"
-      >Built by Erik Krenz</span
+    <span class="font-poppins text-[18px] font-[400] not-italic text-secondary"
+      >© Erik Krenz 2023</span
     >
   </div>
 </footer>

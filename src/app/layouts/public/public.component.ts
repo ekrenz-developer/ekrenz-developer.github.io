@@ -14,17 +14,69 @@ export class PublicComponent implements OnInit {
   ngOnInit() {
     this.headerProps = {
       navbarListItem: [
-        { title: 'Home', path: INTERNAL_ROUTES.HOME },
-        { title: 'About', path: INTERNAL_ROUTES.ABOUT },
-        { title: 'Tech Stack', path: INTERNAL_ROUTES.TECH_STACK },
-        { title: 'Projects', path: INTERNAL_ROUTES.PROJECTS },
-        { title: 'Contact', path: INTERNAL_ROUTES.CONTACT },
+        {
+          title: 'Home',
+          path: INTERNAL_ROUTES.HOME,
+          type: 'header',
+        },
+        {
+          title: 'About',
+          path: INTERNAL_ROUTES.ABOUT,
+          type: 'header',
+        },
+        {
+          title: 'Tech Stack',
+          path: INTERNAL_ROUTES.TECH_STACK,
+          type: 'header',
+        },
+        {
+          title: 'Projects',
+          path: INTERNAL_ROUTES.PROJECTS,
+          type: 'header',
+        },
+        {
+          title: 'Contact',
+          path: INTERNAL_ROUTES.CONTACT,
+          type: 'header',
+        },
       ],
       socialMediaListItem: [
         { icon: ['fab', 'github'] },
         { icon: ['fab', 'linkedin'] },
       ],
     };
-    this.footerProps = this.headerProps;
+    this.footerProps = {
+      navbarListItem: [
+        {
+          title: 'Home',
+          path: INTERNAL_ROUTES.HOME,
+          type: 'footer',
+        },
+        {
+          title: 'About',
+          path: INTERNAL_ROUTES.ABOUT,
+          type: 'footer',
+        },
+        {
+          title: 'Tech Stack',
+          path: INTERNAL_ROUTES.TECH_STACK,
+          type: 'footer',
+        },
+        {
+          title: 'Projects',
+          path: INTERNAL_ROUTES.PROJECTS,
+          type: 'footer',
+        },
+        {
+          title: 'Contact',
+          path: INTERNAL_ROUTES.CONTACT,
+          type: 'footer',
+        },
+      ],
+      socialMediaListItem: [
+        { icon: ['fab', 'github'] },
+        { icon: ['fab', 'linkedin'] },
+      ],
+    };
   }
 }
