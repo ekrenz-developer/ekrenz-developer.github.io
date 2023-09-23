@@ -1,8 +1,10 @@
 <footer class="flex w-full flex-col">
-  <div class="flex w-full flex-row items-center justify-between py-[42px]">
+  <div
+    class="tablet:py-[42px] laptop:py-[42px] desktop:py-[42px] flex w-full flex-row items-center justify-between py-[20px]">
     <app-logo></app-logo>
     <div class="flex flex-row items-center">
       <span
+        *ngIf="!isMobile"
         class="mr-[48px] font-dm-sans text-[18px] font-[400] not-italic text-primary">
         erik.krenz@hotmail.com
       </span>
@@ -11,8 +13,12 @@
     </div>
   </div>
   <hr class="bg-gray h-[2px] rounded opacity-[0.3]" />
-  <div class="flex w-full flex-row items-center justify-between py-[50px]">
-    <app-navbar class="pr-8" [listItem]="props.navbarListItem"></app-navbar>
+  <div
+    class="tablet:justify-between laptop:justify-between desktop:justify-between tablet:py-[50px] laptop:py-[50px] desktop:py-[50px] flex w-full flex-row items-center justify-center py-[20px]">
+    <app-navbar
+      *ngIf="!isMobile"
+      class="pr-8"
+      [listItem]="props.navbarListItem"></app-navbar>
     <span class="font-poppins text-[18px] font-[400] not-italic text-secondary"
       >© Erik Krenz 2023</span
     >

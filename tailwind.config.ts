@@ -7,6 +7,11 @@ export default {
       primary: '#42446E',
       secondary: '#666',
     },
+    screens: {
+      tablet: '640px',
+      laptop: '1024px',
+      desktop: '1280px',
+    },
     extend: {
       fontFamily: {
         poppins: ['Poppins'],
