@@ -5,5 +5,5 @@
     <app-social-media-menu
       [listItem]="props.socialMediaListItem"></app-social-media-menu>
   </div>
-  <fa-icon [icon]="['fas', 'bars']" size="xl"></fa-icon>
+  <fa-icon *ngIf="isMobile" [icon]="['fas', 'bars']" size="xl"></fa-icon>
 </header>

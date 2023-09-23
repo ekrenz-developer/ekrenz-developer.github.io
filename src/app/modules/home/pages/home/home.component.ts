@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 import { TechSectionInputInterface } from '@shared/interfaces/tech-section-input.interface';
 import { ProjectSectionInputInterface } from '@shared/interfaces/project-section-input.interface';
@@ -12,51 +11,7 @@ export class HomeComponent implements OnInit {
   techSectionProps!: TechSectionInputInterface;
   projectSectionProps!: ProjectSectionInputInterface;
 
-  // readonly breakpoint$ = this._breakpointObserver.observe([
-  //   Breakpoints.Large,
-  //   Breakpoints.Medium,
-  //   Breakpoints.Small,
-  //   '(min-width: 500px)',
-  // ]);
-
-  constructor(private _breakpointObserver: BreakpointObserver) {}
-
-  // (max-width: 599.98px)
-  // :
-  // false
-  // (min-width: 600px) and (max-width: 959.98px)
-  // :
-  // false
-  // (min-width: 960px) and (max-width: 1279.98px)
-  // :
-  // false
-  // (min-width: 1280px) and (max-width: 1919.98px)
-  // :
-  // false
-  // (min-width: 1920px)
-  // :
-  // true
-
   ngOnInit() {
-    this._breakpointObserver
-      .observe([
-        Breakpoints.XSmall,
-        Breakpoints.Small,
-        Breakpoints.Medium,
-        Breakpoints.Large,
-        Breakpoints.XLarge,
-      ])
-      // .pipe(takeUntil(this.destroyed))
-      .subscribe(result => {
-        console.log('ACA TEST', result);
-        // for (const query of Object.keys(result.breakpoints)) {
-        //   if (result.breakpoints[query]) {
-        //     this.currentScreenSize =
-        //       this.displayNameMap.get(query) ?? 'Unknown';
-        //   }
-        // }
-      });
-
     this.techSectionProps = {
       header: {
         title: 'My Tech Stack',
