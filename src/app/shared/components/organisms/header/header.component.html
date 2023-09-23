@@ -1,8 +1,9 @@
 <header class="flex h-20 w-full flex-row items-center justify-between">
   <app-logo></app-logo>
-  <div class="flex flex-row">
+  <div *ngIf="!isMobile" class="flex flex-row">
     <app-navbar class="pr-8" [listItem]="props.navbarListItem"></app-navbar>
     <app-social-media-menu
       [listItem]="props.socialMediaListItem"></app-social-media-menu>
   </div>
+  <fa-icon [icon]="['fas', 'bars']" size="xl"></fa-icon>
 </header>

@@ -1,7 +1,8 @@
 <div class="flex flex-col">
-  <app-hero class="flex h-[calc(100vh_-_5rem)] w-full"></app-hero>
+  <app-hero
+    class="mb-[100px] flex w-full tablet:mb-0 tablet:h-[calc(100vh_-_5rem)] laptop:mb-0 laptop:h-[calc(100vh_-_5rem)] desktop:mb-0 desktop:h-[calc(100vh_-_5rem)]"></app-hero>
   <app-tech-section
-    class="mb-[200px]"
+    class="mb-[100px] tablet:mb-[200px] laptop:mb-[200px] desktop:mb-[200px]"
     [props]="techSectionProps"></app-tech-section>
   <app-project-section [props]="projectSectionProps"></app-project-section>
 </div>

@@ -8,4 +8,6 @@ import { HeaderInputInterface } from '@shared/interfaces/header-input.interface'
 })
 export class HeaderComponent {
   @Input() props!: HeaderInputInterface;
+
+  isMobile = true;
 }
