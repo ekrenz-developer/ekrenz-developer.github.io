@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -10,7 +10,7 @@ import { INTERNAL_ROUTES } from '@data/constants';
   selector: 'app-public',
   templateUrl: './public.component.html',
 })
-export class PublicComponent implements OnInit {
+export class PublicComponent implements OnInit, OnDestroy {
   headerProps!: HeaderInputInterface;
   footerProps!: FooterInputInterface;
   destroyed = new Subject<void>();
