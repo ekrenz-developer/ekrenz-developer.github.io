@@ -62,16 +62,16 @@ export class PublicComponent implements OnInit, OnDestroy {
           path: INTERNAL_ROUTES.ABOUT,
           variant: 'header',
         },
-        {
-          title: 'Tech Stack',
-          path: INTERNAL_ROUTES.TECH_STACK,
-          variant: 'header',
-        },
-        {
-          title: 'Projects',
-          path: INTERNAL_ROUTES.PROJECTS,
-          variant: 'header',
-        },
+        // {
+        //   title: 'Tech Stack',
+        //   path: INTERNAL_ROUTES.TECH_STACK,
+        //   variant: 'header',
+        // },
+        // {
+        //   title: 'Projects',
+        //   path: INTERNAL_ROUTES.PROJECTS,
+        //   variant: 'header',
+        // },
         {
           title: 'Contact',
           path: INTERNAL_ROUTES.CONTACT,
@@ -104,16 +104,16 @@ export class PublicComponent implements OnInit, OnDestroy {
           path: INTERNAL_ROUTES.ABOUT,
           variant: 'footer',
         },
-        {
-          title: 'Tech Stack',
-          path: INTERNAL_ROUTES.TECH_STACK,
-          variant: 'footer',
-        },
-        {
-          title: 'Projects',
-          path: INTERNAL_ROUTES.PROJECTS,
-          variant: 'footer',
-        },
+        // {
+        //   title: 'Tech Stack',
+        //   path: INTERNAL_ROUTES.TECH_STACK,
+        //   variant: 'footer',
+        // },
+        // {
+        //   title: 'Projects',
+        //   path: INTERNAL_ROUTES.PROJECTS,
+        //   variant: 'footer',
+        // },
         {
           title: 'Contact',
           path: INTERNAL_ROUTES.CONTACT,

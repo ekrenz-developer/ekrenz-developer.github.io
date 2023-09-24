@@ -1,9 +1,53 @@
-<div>
-  <span>{{ item.position }}</span>
-  <span *ngIf="item?.contract">{{ item.contract }}</span>
-  <span>{{ item.company }}</span>
-  <span>{{ item.location }}</span>
-  <span>{{ item.from }}</span>
-  <span>{{ item.to }}</span>
-  <hr class="bg-gray h-[2px] rounded opacity-[0.3]" />
+<div class="flex max-w-[704px] flex-col">
+  <div class="flex flex-row justify-between">
+    <span
+      class="font-poppins text-[20px] font-[400] not-italic tracking-[1px] text-secondary"
+      >{{ item.position }}</span
+    >
+    <div
+      class="flex h-[24px] min-w-[84px] items-center justify-center rounded-[100px] bg-success-light">
+      <span
+        *ngIf="item?.contract"
+        class="font-poppins text-[10px] font-[600] not-italic text-success"
+        >{{ item.contract }}</span
+      >
+    </div>
+  </div>
+  <div
+    class="mt-[4px] flex flex-col tablet:flex-row tablet:justify-between laptop:flex-row laptop:justify-between desktop:flex-row desktop:justify-between">
+    <div class="flex min-w-[340px] flex-row">
+      <div class="flex basis-1/2 flex-row items-center">
+        <fa-icon
+          class="mr-2 text-secondary-light"
+          [icon]="['fas', 'building']"
+          size="sm"></fa-icon>
+        <span
+          class="font-poppins text-[12px] font-[500] not-italic tracking-[1px] text-secondary-light"
+          >{{ item.company }}</span
+        >
+      </div>
+      <div class="flex basis-1/2 flex-row items-center">
+        <fa-icon
+          class="mr-2 text-secondary-light"
+          [icon]="['fas', 'location-dot']"
+          size="sm"></fa-icon>
+        <span
+          class="font-poppins text-[12px] font-[500] not-italic tracking-[1px] text-secondary-light"
+          >{{ item.location }}</span
+        >
+      </div>
+    </div>
+    <div class="flex flex-row items-center">
+      <fa-icon
+        class="mr-2 text-secondary-light"
+        [icon]="['fas', 'calendar-days']"
+        size="sm"></fa-icon>
+      <span
+        class="font-poppins text-[12px] font-[500] not-italic tracking-[1px] text-secondary-light"
+        >{{ item.from | date: 'MMM y' }} -
+        {{ (item.to | date: 'MMM y') || 'Current' }}</span
+      >
+    </div>
+  </div>
+  <hr class="mt-[24px] h-[2px] rounded bg-secondary-light-2 opacity-[0.3]" />
 </div>

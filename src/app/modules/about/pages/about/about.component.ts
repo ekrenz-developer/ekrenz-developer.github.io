@@ -26,10 +26,34 @@ export class AboutComponent implements OnInit {
       itemList: [
         {
           position: 'SSr. Full Stack Developer',
-          contract: 'fulltime',
+          contract: 'Full Time',
           company: 'Todosgamers',
           location: 'Argentina, Remote',
-          from: new Date('01/09/2020'),
+          from: new Date('2020-10-01'),
+        },
+        {
+          position: 'SSr. Analyst Programmer',
+          contract: 'Full Time',
+          company: 'Infomedical SA',
+          location: 'Argentina',
+          from: new Date('2017-07-01'),
+          to: new Date('2020-09-30'),
+        },
+        {
+          position: 'Jr. Analyst Programmer',
+          contract: 'Full Time',
+          company: 'Culligan',
+          location: 'Argentina',
+          from: new Date('2016-05-01'),
+          to: new Date('2017-06-30'),
+        },
+        {
+          position: 'Jr. Analyst Programmer',
+          contract: 'Full Time',
+          company: 'Accusys Technology',
+          location: 'Argentina',
+          from: new Date('2014-08-01'),
+          to: new Date('2016-04-30'),
         },
       ],
     };
