@@ -1,6 +1,11 @@
 <div class="flex w-full flex-col items-center">
-  <app-title class="mb-[29px]" [props]="{ title: props.title }"></app-title>
+  <app-title
+    class="mb-[29px] grid w-full"
+    [props]="{ title: props.title, variant: props.variant }"></app-title>
   <app-subtitle
-    class="text-center"
-    [props]="{ subtitle: props.subtitle }"></app-subtitle>
+    class="grid w-full"
+    [props]="{
+      subtitle: props.subtitle,
+      variant: props.variant
+    }"></app-subtitle>
 </div>

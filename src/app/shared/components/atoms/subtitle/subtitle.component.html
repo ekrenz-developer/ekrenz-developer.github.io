@@ -1,3 +1,4 @@
-<span class="font-poppins text-[32px] font-[400] not-italic text-secondary">
-  {{ props.subtitle }}
-</span>
+<span
+  class="font-poppins font-[400] not-italic text-secondary"
+  [class]="currentVariant"
+  [innerHtml]="props.subtitle"></span>
