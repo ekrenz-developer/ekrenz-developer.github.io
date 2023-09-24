@@ -9,6 +9,7 @@ import {
   TechItemComponent,
   ProjectCardComponent,
   LogoComponent,
+  WorkExperienceItemComponent,
 } from './atoms';
 
 // molecules
@@ -19,6 +20,7 @@ import {
   TechListComponent,
   SectionHeaderComponent,
   ProjectListComponent,
+  WorkExperienceListComponent,
 } from './molecules';
 
 // organisms
@@ -27,6 +29,7 @@ import {
   TechSectionComponent,
   ProjectSectionComponent,
   FooterComponent,
+  WorkExperienceSectionComponent,
 } from './organisms';
 
 // templates
@@ -51,4 +54,7 @@ export const components = [
   ProjectSectionComponent,
   FooterComponent,
   LogoComponent,
+  WorkExperienceSectionComponent,
+  WorkExperienceItemComponent,
+  WorkExperienceListComponent,
 ];

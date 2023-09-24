@@ -7,3 +7,4 @@ export * from './subtitle/subtitle.component';
 export * from './tech-item/tech-item.component';
 export * from './project-card/project-card.component';
 export * from './logo/logo.component';
+export * from './work-experience-item/work-experience-item.component';
