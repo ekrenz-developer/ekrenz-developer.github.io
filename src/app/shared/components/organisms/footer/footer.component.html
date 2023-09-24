@@ -4,7 +4,7 @@
     <app-logo></app-logo>
     <div class="flex flex-row items-center">
       <span
-        *ngIf="!isMobile"
+        *ngIf="isLaptopAndUp"
         class="mr-[48px] font-dm-sans text-[18px] font-[400] not-italic text-primary">
         erik.krenz@hotmail.com
       </span>
@@ -14,9 +14,9 @@
   </div>
   <hr class="bg-gray h-[2px] rounded opacity-[0.3]" />
   <div
-    class="flex w-full flex-row items-center justify-center py-[20px] tablet:justify-between tablet:py-[50px] laptop:justify-between laptop:py-[50px] desktop:justify-between desktop:py-[50px]">
+    class="flex w-full flex-row items-center justify-center py-[20px] tablet:justify-center tablet:py-[50px] laptop:justify-between laptop:py-[50px] desktop:justify-between desktop:py-[50px]">
     <app-navbar
-      *ngIf="!isMobile"
+      *ngIf="isLaptopAndUp"
       class="pr-8"
       [listItem]="props.navbarListItem"></app-navbar>
     <span class="font-poppins text-[18px] font-[400] not-italic text-secondary"

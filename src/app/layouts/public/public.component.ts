@@ -31,11 +31,17 @@ export class PublicComponent implements OnInit {
         '(min-width: 1280px)',
       ])
       .subscribe(result => {
-        console.log('ACA TEST', result);
         for (const query of Object.keys(result.breakpoints)) {
           if (result.breakpoints[query]) {
-            console.log('ACA TEST', this.screenSize[query]);
             this.currentScreenSize = this.screenSize[query];
+            this.headerProps = {
+              ...this.headerProps,
+              currentScreenSize: this.currentScreenSize,
+            };
+            this.footerProps = {
+              ...this.footerProps,
+              currentScreenSize: this.currentScreenSize,
+            };
           }
         }
       });
