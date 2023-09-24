@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 import { HeaderInputInterface, FooterInputInterface } from '@shared/interfaces';
 import { INTERNAL_ROUTES } from '@data/constants';
@@ -11,6 +13,8 @@ import { INTERNAL_ROUTES } from '@data/constants';
 export class PublicComponent implements OnInit {
   headerProps!: HeaderInputInterface;
   footerProps!: FooterInputInterface;
+  destroyed = new Subject<void>();
+  currentScreenSize!: 'mobile' | 'tablet' | 'laptop' | 'desktop';
 
   screenSize: Record<string, 'mobile' | 'tablet' | 'laptop' | 'desktop'> = {
     '(max-width: 639px)': 'mobile',
@@ -18,7 +22,6 @@ export class PublicComponent implements OnInit {
     '(min-width: 1024px) and (max-width: 1279px)': 'laptop',
     '(min-width: 1280px)': 'desktop',
   };
-  currentScreenSize!: 'mobile' | 'tablet' | 'laptop' | 'desktop';
 
   constructor(private _breakpointObserver: BreakpointObserver) {}
 
@@ -30,6 +33,7 @@ export class PublicComponent implements OnInit {
         '(min-width: 1024px) and (max-width: 1279px)',
         '(min-width: 1280px)',
       ])
+      .pipe(takeUntil(this.destroyed))
       .subscribe(result => {
         for (const query of Object.keys(result.breakpoints)) {
           if (result.breakpoints[query]) {
@@ -130,5 +134,10 @@ export class PublicComponent implements OnInit {
       ],
       currentScreenSize: this.currentScreenSize,
     };
+  }
+
+  ngOnDestroy() {
+    this.destroyed.next();
+    this.destroyed.complete();
   }
 }
