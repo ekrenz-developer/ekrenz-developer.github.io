@@ -9,5 +9,10 @@ import { HeaderInputInterface } from '@shared/interfaces/header-input.interface'
 export class HeaderComponent {
   @Input() props!: HeaderInputInterface;
 
-  isMobile = true;
+  get isLaptopAndUp(): boolean {
+    return !(
+      this.props.currentScreenSize === 'mobile' ||
+      this.props.currentScreenSize === 'tablet'
+    );
+  }
 }

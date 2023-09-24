@@ -9,5 +9,10 @@ import { FooterInputInterface } from '@shared/interfaces/footer-input.interface'
 export class FooterComponent {
   @Input() props!: FooterInputInterface;
 
-  isMobile = true;
+  get isLaptopAndUp(): boolean {
+    return !(
+      this.props.currentScreenSize === 'mobile' ||
+      this.props.currentScreenSize === 'tablet'
+    );
+  }
 }
