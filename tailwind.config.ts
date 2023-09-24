@@ -6,6 +6,10 @@ export default {
     colors: {
       primary: '#42446E',
       secondary: '#666',
+      'secondary-light': '#A7A7A7',
+      'secondary-light-2': '#EBEAED',
+      success: '#018C0F',
+      'success-light': '#D7FFE0',
     },
     screens: {
       tablet: '640px',

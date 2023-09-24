@@ -1,9 +1,53 @@
-<div>
-  <span>{{ item.position }}</span>
-  <span *ngIf="item?.contract">{{ item.contract }}</span>
-  <span>{{ item.company }}</span>
-  <span>{{ item.location }}</span>
-  <span>{{ item.from }}</span>
-  <span>{{ item.to }}</span>
-  <hr class="bg-gray h-[2px] rounded opacity-[0.3]" />
+<div class="flex max-w-[704px] flex-col">
+  <div class="flex flex-row justify-between">
+    <span
+      class="font-poppins text-[20px] font-[400] not-italic tracking-[1px] text-secondary"
+      >{{ item.position }}</span
+    >
+    <div
+      class="bg-success-light flex h-[24px] min-w-[84px] items-center justify-center rounded-[100px]">
+      <span
+        *ngIf="item?.contract"
+        class="text-success font-poppins text-[10px] font-[600] not-italic"
+        >{{ item.contract }}</span
+      >
+    </div>
+  </div>
+  <div
+    class="tablet:justify-between laptop:justify-between desktop:justify-between tablet:flex-row laptop:flex-row desktop:flex-row mt-[4px] flex flex-col">
+    <div class="flex min-w-[340px] flex-row">
+      <div class="flex basis-1/2 flex-row items-center">
+        <fa-icon
+          class="text-secondary-light mr-2"
+          [icon]="['fas', 'building']"
+          size="sm"></fa-icon>
+        <span
+          class="text-secondary-light font-poppins text-[12px] font-[500] not-italic tracking-[1px]"
+          >{{ item.company }}</span
+        >
+      </div>
+      <div class="flex basis-1/2 flex-row items-center">
+        <fa-icon
+          class="text-secondary-light mr-2"
+          [icon]="['fas', 'location-dot']"
+          size="sm"></fa-icon>
+        <span
+          class="text-secondary-light font-poppins text-[12px] font-[500] not-italic tracking-[1px]"
+          >{{ item.location }}</span
+        >
+      </div>
+    </div>
+    <div class="flex flex-row items-center">
+      <fa-icon
+        class="text-secondary-light mr-2"
+        [icon]="['fas', 'calendar-days']"
+        size="sm"></fa-icon>
+      <span
+        class="text-secondary-light font-poppins text-[12px] font-[500] not-italic tracking-[1px]"
+        >{{ item.from | date: 'MMM y' }} -
+        {{ (item.to | date: 'MMM y') || 'Current' }}</span
+      >
+    </div>
+  </div>
+  <hr class="bg-secondary-light-2 mt-[24px] h-[2px] rounded opacity-[0.3]" />
 </div>

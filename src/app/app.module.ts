@@ -10,7 +10,12 @@ import {
   faGithub as fabGithub,
   faLinkedin as fabLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
-import { faBars as fasBars } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars as fasBars,
+  faLocationDot as fasLocationDot,
+  faBuilding as fasBuilding,
+  faCalendarDays as fasCalendarDays,
+} from '@fortawesome/free-solid-svg-icons';
 
 import { CoreModule } from '@core/core.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -38,6 +43,13 @@ import { PublicComponent } from './layouts/public/public.component';
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(fabGithub, fabLinkedin, fasBars);
+    library.addIcons(
+      fabGithub,
+      fabLinkedin,
+      fasBars,
+      fasLocationDot,
+      fasBuilding,
+      fasCalendarDays
+    );
   }
 }
