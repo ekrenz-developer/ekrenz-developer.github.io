@@ -1,14 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'erik-krenz';
-
-  ngOnInit(): void {
-    initFlowbite();
-  }
+  private flowbiteReference = initFlowbite;
 }
