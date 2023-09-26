@@ -15,6 +15,7 @@ import {
   faLocationDot as fasLocationDot,
   faBuilding as fasBuilding,
   faCalendarDays as fasCalendarDays,
+  faXmark as fasXmark,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { CoreModule } from '@core/core.module';
@@ -49,7 +50,8 @@ export class AppModule {
       fasBars,
       fasLocationDot,
       fasBuilding,
-      fasCalendarDays
+      fasCalendarDays,
+      fasXmark
     );
   }
 }
