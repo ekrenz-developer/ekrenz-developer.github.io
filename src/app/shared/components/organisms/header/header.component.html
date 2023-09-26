@@ -5,7 +5,15 @@
     <app-social-media-menu
       [listItem]="props.socialMediaListItem"></app-social-media-menu>
   </div>
-  <div *ngIf="!isLaptopAndUp" class="p-2">
+  <!-- <button
+    *ngIf="!isLaptopAndUp"
+    class="p-2"
+    type="button"
+    (click)="toggleSpanMenu()">
     <fa-icon [icon]="['fas', 'bars']" size="xl"></fa-icon>
-  </div>
+  </button>
+  <div
+    class="bg-black fixed right-0 top-0 z-40 h-screen w-64 overflow-y-auto p-4 transition-transform">
+    TEST
+  </div> -->
 </header>
