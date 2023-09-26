@@ -11,7 +11,9 @@ export class NavbarItemComponent {
   @Input() item!: NavbarItemInputInterface;
 
   variant: Record<NavbarVariantType, string> = {
-    header: 'text-secondary text-[20px]',
-    footer: 'text-primary text-[18px]',
+    header: 'text-[20px]',
+    footer: 'text-[18px]',
   };
+  //linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%)
+  // hover:text-[#4b4fa6]
 }

@@ -12,7 +12,7 @@ export class SocialMediaMenuItemComponent {
 
   variant: Record<NavbarVariantType, string> = {
     header: 'text-secondary',
-    footer: 'text-primary',
+    footer: 'text-secondary',
   };
 
   goToUrl(): void {

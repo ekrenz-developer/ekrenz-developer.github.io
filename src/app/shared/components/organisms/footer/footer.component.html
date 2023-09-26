@@ -1,26 +1,26 @@
-<footer class="flex w-full flex-col">
-  <div
-    class="flex w-full flex-row items-center justify-between py-[20px] tablet:py-[42px] laptop:py-[42px] desktop:py-[42px]">
+<footer class="mb-4 flex w-full flex-col laptop:mb-8 desktop:mb-8">
+  <div class="flex w-full flex-row items-center justify-between">
     <app-logo></app-logo>
     <div class="flex flex-row items-center">
       <span
         *ngIf="isLaptopAndUp"
-        class="mr-[48px] font-dm-sans text-[18px] font-[400] not-italic text-primary">
+        class="mr-[48px] font-dm-sans text-[18px] font-[400] not-italic text-secondary">
         erik.krenz@hotmail.com
       </span>
       <app-social-media-menu
         [listItem]="props.socialMediaListItem"></app-social-media-menu>
     </div>
   </div>
-  <hr class="bg-gray h-[2px] rounded opacity-[0.3]" />
+  <hr
+    class="bg-gray my-6 h-[2px] rounded opacity-[0.3] laptop:my-8 desktop:my-8" />
   <div
-    class="flex w-full flex-row items-center justify-center py-[20px] tablet:justify-center tablet:py-[50px] laptop:justify-between laptop:py-[50px] desktop:justify-between desktop:py-[50px]">
+    class="flex w-full flex-row items-center justify-center tablet:justify-center laptop:justify-between desktop:justify-between">
     <app-navbar
       *ngIf="isLaptopAndUp"
       class="pr-8"
       [listItem]="props.navbarListItem"></app-navbar>
-    <span class="font-poppins text-[18px] font-[400] not-italic text-secondary"
-      >© Erik Krenz 2023. All rights reserved</span
+    <span class="font-poppins text-[18px] font-[400] not-italic text-primary"
+      >© Erik Krenz 2023. All rights reserved.</span
     >
   </div>
 </footer>

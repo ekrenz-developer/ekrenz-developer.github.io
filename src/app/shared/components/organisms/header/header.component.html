@@ -5,5 +5,7 @@
     <app-social-media-menu
       [listItem]="props.socialMediaListItem"></app-social-media-menu>
   </div>
-  <fa-icon *ngIf="!isLaptopAndUp" [icon]="['fas', 'bars']" size="xl"></fa-icon>
+  <div *ngIf="!isLaptopAndUp" class="p-2">
+    <fa-icon [icon]="['fas', 'bars']" size="xl"></fa-icon>
+  </div>
 </header>
