@@ -9,22 +9,22 @@
     *ngIf="!isLaptopAndUp"
     class="p-2"
     type="button"
-    data-drawer-target="drawer-navigation"
-    data-drawer-show="drawer-navigation"
+    data-drawer-target="drawer-right-example"
+    data-drawer-show="drawer-right-example"
     data-drawer-placement="right"
-    aria-controls="drawer-navigation">
+    aria-controls="drawer-right-example">
     <fa-icon [icon]="['fas', 'bars']" size="xl"></fa-icon>
   </button>
   <div
-    id="drawer-navigation"
-    class="fixed right-0 top-0 z-40 h-screen w-80 translate-x-full overflow-y-auto bg-white p-4 transition-transform dark:bg-gray-800"
+    id="drawer-right-example"
+    class="bg-white dark:bg-gray-800 fixed right-0 top-0 z-40 h-screen w-80 translate-x-full overflow-y-auto p-4 transition-transform"
     tabindex="-1"
     aria-labelledby="drawer-right-label">
     <button
       type="button"
-      data-drawer-hide="drawer-navigation"
-      aria-controls="drawer-navigation"
-      class="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-secondary hover:bg-gray-200 hover:text-gray-900">
+      data-drawer-hide="drawer-right-example"
+      aria-controls="drawer-right-example"
+      class="bg-transparent hover:bg-gray-200 hover:text-gray-900 absolute right-2.5 top-2.5 inline-flex items-center rounded-lg p-1.5 text-secondary">
       <fa-icon [icon]="['fas', 'xmark']" size="xl"></fa-icon>
     </button>
     <div class="mt-4 overflow-y-auto py-4">
@@ -32,7 +32,7 @@
         <li *ngFor="let item of props.navbarListItem">
           <a
             [href]="item.path"
-            class="flex items-center rounded-lg p-2 text-secondary hover:bg-gray-100 hover:text-primary">
+            class="hover:bg-gray-100 flex items-center rounded-lg p-2 text-secondary hover:text-primary">
             <span class="ml-3">{{ item.title }}</span>
           </a>
         </li>
