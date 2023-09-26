@@ -17,14 +17,14 @@
   </button>
   <div
     id="drawer-navigation"
-    class="bg-white dark:bg-gray-800 fixed right-0 top-0 z-40 h-screen w-80 translate-x-full overflow-y-auto p-4 transition-transform"
+    class="fixed right-0 top-0 z-40 h-screen w-80 translate-x-full overflow-y-auto bg-white p-4 transition-transform dark:bg-gray-800"
     tabindex="-1"
     aria-labelledby="drawer-right-label">
     <button
       type="button"
       data-drawer-hide="drawer-navigation"
       aria-controls="drawer-navigation"
-      class="bg-transparent hover:bg-gray-200 hover:text-gray-900 absolute right-2.5 top-2.5 inline-flex items-center rounded-lg p-1.5 text-secondary">
+      class="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-secondary hover:bg-gray-200 hover:text-gray-900">
       <fa-icon [icon]="['fas', 'xmark']" size="xl"></fa-icon>
     </button>
     <div class="mt-4 overflow-y-auto py-4">
@@ -32,7 +32,7 @@
         <li *ngFor="let item of props.navbarListItem">
           <a
             [href]="item.path"
-            class="hover:bg-gray-100 flex items-center rounded-lg p-2 text-secondary hover:text-primary">
+            class="flex items-center rounded-lg p-2 text-secondary hover:bg-gray-100 hover:text-primary">
             <span class="ml-3">{{ item.title }}</span>
           </a>
         </li>
