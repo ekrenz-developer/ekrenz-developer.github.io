@@ -21,6 +21,7 @@ import {
   SectionHeaderComponent,
   ProjectListComponent,
   WorkExperienceListComponent,
+  SidebarMenuComponent,
 } from './molecules';
 
 // organisms
@@ -57,4 +58,5 @@ export const components = [
   WorkExperienceSectionComponent,
   WorkExperienceItemComponent,
   WorkExperienceListComponent,
+  SidebarMenuComponent,
 ];
