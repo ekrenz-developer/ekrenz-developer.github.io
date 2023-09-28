@@ -34,12 +34,12 @@ import { PublicComponent } from './layouts/public/public.component';
     SharedModule,
     FontAwesomeModule,
   ],
-  // providers: [
-  //   {
-  //     provide: LocationStrategy,
-  //     useClass: PathLocationStrategy,
-  //   },
-  // ],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: PathLocationStrategy,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {
