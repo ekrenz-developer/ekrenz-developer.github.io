@@ -1,42 +1,11 @@
-<header class="flex h-20 w-full flex-row items-center justify-between">
+<header class="flex h-[72px] w-full flex-row items-center justify-between">
   <app-logo></app-logo>
   <div *ngIf="isLaptopAndUp" class="flex flex-row">
     <app-navbar class="pr-8" [listItem]="props.navbarListItem"></app-navbar>
     <app-social-media-menu
       [listItem]="props.socialMediaListItem"></app-social-media-menu>
   </div>
-  <button
+  <app-sidebar-menu
     *ngIf="!isLaptopAndUp"
-    class="p-2"
-    type="button"
-    data-drawer-target="drawer-right-example"
-    data-drawer-show="drawer-right-example"
-    data-drawer-placement="right"
-    aria-controls="drawer-right-example">
-    <fa-icon [icon]="['fas', 'bars']" size="xl"></fa-icon>
-  </button>
-  <div
-    id="drawer-right-example"
-    class="fixed right-0 top-0 z-40 h-screen w-80 translate-x-full overflow-y-auto bg-white p-4 transition-transform dark:bg-gray-800"
-    tabindex="-1"
-    aria-labelledby="drawer-right-label">
-    <button
-      type="button"
-      data-drawer-hide="drawer-right-example"
-      aria-controls="drawer-right-example"
-      class="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-secondary hover:bg-gray-200 hover:text-gray-900">
-      <fa-icon [icon]="['fas', 'xmark']" size="xl"></fa-icon>
-    </button>
-    <div class="mt-4 overflow-y-auto py-4">
-      <ul class="space-y-2 font-medium">
-        <li *ngFor="let item of props.navbarListItem">
-          <a
-            [href]="item.path"
-            class="flex items-center rounded-lg p-2 text-secondary hover:bg-gray-100 hover:text-primary">
-            <span class="ml-3">{{ item.title }}</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+    [listItem]="props.navbarListItem"></app-sidebar-menu>
 </header>
