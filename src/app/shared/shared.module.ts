@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { QuicklinkModule } from 'ngx-quicklink';
 
 import * as components from './components';
 
@@ -15,6 +16,7 @@ import * as components from './components';
     RouterModule,
     CommonModule,
     FontAwesomeModule,
+    QuicklinkModule,
   ],
   declarations: [...components.components],
   exports: [

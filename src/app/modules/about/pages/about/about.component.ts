@@ -10,6 +10,7 @@ import { WorkExperienceSectionInputInterface } from '@shared/interfaces/work-exp
 export class AboutComponent implements OnInit {
   aboutSectionProps!: SectionHeaderInputInterface;
   workExperienceSectionProps!: WorkExperienceSectionInputInterface;
+  educationSectionProps!: WorkExperienceSectionInputInterface;
 
   ngOnInit() {
     this.aboutSectionProps = {
@@ -54,6 +55,28 @@ export class AboutComponent implements OnInit {
           location: 'Argentina',
           from: new Date('2014-08-01'),
           to: new Date('2016-04-30'),
+        },
+      ],
+    };
+    this.educationSectionProps = {
+      title: {
+        title: 'Education',
+        variant: 'secondary',
+      },
+      itemList: [
+        {
+          position: 'Higher Technician in Systems Analysis',
+          company: 'IFTS 19',
+          location: 'Argentina',
+          from: new Date('2016-03-01'),
+          to: new Date('2019-12-01'),
+        },
+        {
+          position: 'Technician in Computer Programming',
+          company: 'Technical School Nº3',
+          location: 'Argentina',
+          from: new Date('2008-03-01'),
+          to: new Date('2013-12-01'),
         },
       ],
     };
