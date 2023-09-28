@@ -31,6 +31,7 @@ import {
   ProjectSectionComponent,
   FooterComponent,
   WorkExperienceSectionComponent,
+  EducationSectionComponent,
 } from './organisms';
 
 // templates
@@ -59,4 +60,5 @@ export const components = [
   WorkExperienceItemComponent,
   WorkExperienceListComponent,
   SidebarMenuComponent,
+  EducationSectionComponent,
 ];
