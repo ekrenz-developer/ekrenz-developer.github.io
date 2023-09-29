@@ -114,11 +114,11 @@ export class PublicComponent implements OnInit, OnDestroy {
         //   path: INTERNAL_ROUTES.PROJECTS,
         //   variant: 'footer',
         // },
-        {
-          title: 'Contact',
-          path: INTERNAL_ROUTES.CONTACT,
-          variant: 'footer',
-        },
+        // {
+        //   title: 'Contact',
+        //   path: INTERNAL_ROUTES.CONTACT,
+        //   variant: 'footer',
+        // },
       ],
       socialMediaListItem: [
         {
